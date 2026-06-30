@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @keyframes fade-up {
@@ -105,7 +106,9 @@ header {
 }
 
 .name a {
-    color: #45E6A3;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-clip: text;
+    color: transparent;
     padding-block: 1.5rem;
 	font-size: 2rem;
     font-weight: 600;
@@ -245,7 +248,7 @@ header {
 }
 
 .animation img:hover {
-    transform: rotate(5deg) ;
+    transform: scale(0.9) rotate(3deg);
 }
 
 .social-media {
@@ -481,7 +484,7 @@ header {
 }
 
 .react-images img {
-    width: 100%;
+    width: 70%;
     object-fit: cover;
 }
 
@@ -524,7 +527,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .about p {
@@ -556,7 +559,7 @@ header {
 
 .about-me h2 {
     font-family: "Rethink Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     animation: fade-up 0.4s ease-in-out forwards;
     opacity: 0;
@@ -738,7 +741,7 @@ footer hr {
     border: 1px solid #232323;
 }
 
-footer a {
+footer span {
     color: #00A74B;
 }
 
